@@ -1,0 +1,232 @@
+\doxysection{Graph\+Factory Class Reference}
+\hypertarget{class_graph_factory}{}\label{class_graph_factory}\index{GraphFactory@{GraphFactory}}
+
+
+Classe \doxylink{class_graph_factory}{Graph\+Factory} \+: permet de créer des Graphes de reseaux de transport en commun , Backenford dans notre cas , elle exploite la class.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_graph}{Graph}}$<$ String $>$ \mbox{\hyperlink{class_graph_factory_a994665fbb9a239654de9b9f0b743a05f}{brackenford\+Chemin\+Rapide}} (List$<$ \mbox{\hyperlink{class_station}{Station}} $>$ stations, List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$ lignes)
+\begin{DoxyCompactList}\small\item\em Creation d\textquotesingle{}un graphe pour les utilisateurs n\textquotesingle{}ayant pas d\textquotesingle{}handicap et souhaitant prendre le chemin le plus rapide . \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_graph}{Graph}}$<$ String $>$ \mbox{\hyperlink{class_graph_factory_af165c304f96b4124c59b29fb0625abd5}{brackenford\+Chemin\+Prix}} (\mbox{\hyperlink{class_passager}{Passager}} passager, List$<$ \mbox{\hyperlink{class_station}{Station}} $>$ stations, List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$ lignes)
+\begin{DoxyCompactList}\small\item\em Creation d\textquotesingle{}un graphe pour les utilisateurs n\textquotesingle{}ayant pas d\textquotesingle{}handicap et souhaitant prendre le chemin le moins chere . \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_graph}{Graph}}$<$ String $>$ \mbox{\hyperlink{class_graph_factory_a8d6fc588b7e791e46fec61f45427625c}{brackenford\+Hand\+Court}} (List$<$ \mbox{\hyperlink{class_station}{Station}} $>$ stations, List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$ lignes)
+\begin{DoxyCompactList}\small\item\em Creation d\textquotesingle{}un graphe pour les utilisateurs ayant un handicap souhaitant prendre le chemin le plus court pour un itinéraire . \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_graph}{Graph}}$<$ String $>$ \mbox{\hyperlink{class_graph_factory_abae56f1cadcd1a92de34248a0a7e99d0}{brackenford\+Hand\+Prix}} (\mbox{\hyperlink{class_passager}{Passager}} passager, List$<$ \mbox{\hyperlink{class_station}{Station}} $>$ stations, List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$ lignes)
+\begin{DoxyCompactList}\small\item\em Creation d\textquotesingle{}un graphe pour les utilisateurs ayant un handicap souhaitant prendre le chemin le moins chere pour un itinéraire . \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_graph_factory_a38badc9bcc7be6c0af3e9a4298d73ad7}{calcul\+Distance}} (\mbox{\hyperlink{class_station}{Station}} debut, \mbox{\hyperlink{class_station}{Station}} arrive)
+\begin{DoxyCompactList}\small\item\em Calcule la distance entre deux stations en utilisant la formule de Haversine. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_graph_factory_aefcf3f1df0fd4c4a2d488367232a2805}{convertir\+En\+Radians}} (double\mbox{[}$\,$\mbox{]} valeurs)
+\begin{DoxyCompactList}\small\item\em Convertit un angle exprimé en degrés, minutes, secondes en radians. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_graph_factory_ada3b31c92490e3014670138de37c7b64}{calcul\+Temps}} (\mbox{\hyperlink{class_station}{Station}} debut, \mbox{\hyperlink{class_station}{Station}} arrive, List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$ lignes)
+\begin{DoxyCompactList}\small\item\em Calcule le temps de trajet entre deux stations sur une même ligne en fonction de la vitesse de la ligne. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_graph_factory_aafa6579af1bfdcd11781cefbff231b7a}{calcul\+Prix}} (\mbox{\hyperlink{class_passager}{Passager}} passager, \mbox{\hyperlink{class_station}{Station}} debut, \mbox{\hyperlink{class_station}{Station}} arrive, List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$ lignes)
+\begin{DoxyCompactList}\small\item\em Calcule le prix du trajet entre deux stations en fonction de la ligne utilisée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_graph_factory_a084cb8e50fe5f5353c67b1bf51c44ab0}\label{class_graph_factory_a084cb8e50fe5f5353c67b1bf51c44ab0} 
+static final int {\bfseries deg} = 0
+\item 
+\Hypertarget{class_graph_factory_a073d195269ee4f49112a62f0cd741173}\label{class_graph_factory_a073d195269ee4f49112a62f0cd741173} 
+static final int {\bfseries min} = 1
+\item 
+\Hypertarget{class_graph_factory_a33e6b29c263c0b6302b5c1332259bac4}\label{class_graph_factory_a33e6b29c263c0b6302b5c1332259bac4} 
+static final int {\bfseries sec} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{class_graph_factory}{Graph\+Factory} \+: permet de créer des Graphes de reseaux de transport en commun , Backenford dans notre cas , elle exploite la class. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_graph}{Graph} dont l\textquotesingle{}auteur est Richard WOODWARD 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+\+: Landry ABLOH et Darius SEHOUBO 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_graph_factory_af165c304f96b4124c59b29fb0625abd5}\index{GraphFactory@{GraphFactory}!brackenfordCheminPrix@{brackenfordCheminPrix}}
+\index{brackenfordCheminPrix@{brackenfordCheminPrix}!GraphFactory@{GraphFactory}}
+\doxysubsubsection{\texorpdfstring{brackenfordCheminPrix()}{brackenfordCheminPrix()}}
+{\footnotesize\ttfamily \label{class_graph_factory_af165c304f96b4124c59b29fb0625abd5} 
+static \mbox{\hyperlink{class_graph}{Graph}}$<$ String $>$ Graph\+Factory.\+brackenford\+Chemin\+Prix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_passager}{Passager}}}]{passager}{, }\item[{List$<$ \mbox{\hyperlink{class_station}{Station}} $>$}]{stations}{, }\item[{List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$}]{lignes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creation d\textquotesingle{}un graphe pour les utilisateurs n\textquotesingle{}ayant pas d\textquotesingle{}handicap et souhaitant prendre le chemin le moins chere . 
+
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em passager} & \+: le passager qui utilise le réseau de transport en commun. \\
+\hline
+{\em stations} & \+: Liste des stations du reseau de Backenford. \\
+\hline
+{\em lignes} & \+: Liste des lignes de transport du reseau de Backenford. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un graphe représentant le reseau de transport en commun de Brackenford pour un utilisateur qui veut avancer en suivant le chemin le moins chère . 
+\end{DoxyReturn}
+\Hypertarget{class_graph_factory_a994665fbb9a239654de9b9f0b743a05f}\index{GraphFactory@{GraphFactory}!brackenfordCheminRapide@{brackenfordCheminRapide}}
+\index{brackenfordCheminRapide@{brackenfordCheminRapide}!GraphFactory@{GraphFactory}}
+\doxysubsubsection{\texorpdfstring{brackenfordCheminRapide()}{brackenfordCheminRapide()}}
+{\footnotesize\ttfamily \label{class_graph_factory_a994665fbb9a239654de9b9f0b743a05f} 
+static \mbox{\hyperlink{class_graph}{Graph}}$<$ String $>$ Graph\+Factory.\+brackenford\+Chemin\+Rapide (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_station}{Station}} $>$}]{stations}{, }\item[{List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$}]{lignes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creation d\textquotesingle{}un graphe pour les utilisateurs n\textquotesingle{}ayant pas d\textquotesingle{}handicap et souhaitant prendre le chemin le plus rapide . 
+
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em passager} & \+: le passager qui utilise le réseau de transport en commun. \\
+\hline
+{\em stations} & \+: Liste des stations du reseau de Backenford. \\
+\hline
+{\em lignes} & \+: Liste des lignes de transport du reseau de Backenford. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un graphe representant le reseau de transport en commun de Brackenford pour un utilisateur qui veut avancer en suivant le chemin le plus rapide . 
+\end{DoxyReturn}
+\Hypertarget{class_graph_factory_a8d6fc588b7e791e46fec61f45427625c}\index{GraphFactory@{GraphFactory}!brackenfordHandCourt@{brackenfordHandCourt}}
+\index{brackenfordHandCourt@{brackenfordHandCourt}!GraphFactory@{GraphFactory}}
+\doxysubsubsection{\texorpdfstring{brackenfordHandCourt()}{brackenfordHandCourt()}}
+{\footnotesize\ttfamily \label{class_graph_factory_a8d6fc588b7e791e46fec61f45427625c} 
+static \mbox{\hyperlink{class_graph}{Graph}}$<$ String $>$ Graph\+Factory.\+brackenford\+Hand\+Court (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_station}{Station}} $>$}]{stations}{, }\item[{List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$}]{lignes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creation d\textquotesingle{}un graphe pour les utilisateurs ayant un handicap souhaitant prendre le chemin le plus court pour un itinéraire . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stations} & \+: Liste des stations du reseau de Backenford. \\
+\hline
+{\em lignes} & \+: Liste des lignes de transport du reseau de Backenford. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un graphe représentant le reseau de transport en commun de Brackenford pour un utilisateur atteint de handicap souhaitant avancer en suivant le chemin le plus rapide. 
+\end{DoxyReturn}
+\Hypertarget{class_graph_factory_abae56f1cadcd1a92de34248a0a7e99d0}\index{GraphFactory@{GraphFactory}!brackenfordHandPrix@{brackenfordHandPrix}}
+\index{brackenfordHandPrix@{brackenfordHandPrix}!GraphFactory@{GraphFactory}}
+\doxysubsubsection{\texorpdfstring{brackenfordHandPrix()}{brackenfordHandPrix()}}
+{\footnotesize\ttfamily \label{class_graph_factory_abae56f1cadcd1a92de34248a0a7e99d0} 
+static \mbox{\hyperlink{class_graph}{Graph}}$<$ String $>$ Graph\+Factory.\+brackenford\+Hand\+Prix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_passager}{Passager}}}]{passager}{, }\item[{List$<$ \mbox{\hyperlink{class_station}{Station}} $>$}]{stations}{, }\item[{List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$}]{lignes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creation d\textquotesingle{}un graphe pour les utilisateurs ayant un handicap souhaitant prendre le chemin le moins chere pour un itinéraire . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stations} & \+: Liste des stations du reseau de Backenford. \\
+\hline
+{\em lignes} & \+: Liste des lignes de transport du reseau de Backenford. \\
+\hline
+{\em passager} & \+: le passager qui utilise le réseau de transport en commun. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un graphe représentant le reseau de transport en commun de Brackenford pour un utilisateur atteint de handicap souhaitant avancer en suivant le chemin le moins chere. 
+\end{DoxyReturn}
+\Hypertarget{class_graph_factory_a38badc9bcc7be6c0af3e9a4298d73ad7}\index{GraphFactory@{GraphFactory}!calculDistance@{calculDistance}}
+\index{calculDistance@{calculDistance}!GraphFactory@{GraphFactory}}
+\doxysubsubsection{\texorpdfstring{calculDistance()}{calculDistance()}}
+{\footnotesize\ttfamily \label{class_graph_factory_a38badc9bcc7be6c0af3e9a4298d73ad7} 
+static double Graph\+Factory.\+calcul\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_station}{Station}}}]{debut}{, }\item[{\mbox{\hyperlink{class_station}{Station}}}]{arrive}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calcule la distance entre deux stations en utilisant la formule de Haversine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em debut} & \doxylink{class_station}{Station} de départ \\
+\hline
+{\em arrive} & \doxylink{class_station}{Station} d\textquotesingle{}arrivée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance en mètres 
+\end{DoxyReturn}
+\Hypertarget{class_graph_factory_aafa6579af1bfdcd11781cefbff231b7a}\index{GraphFactory@{GraphFactory}!calculPrix@{calculPrix}}
+\index{calculPrix@{calculPrix}!GraphFactory@{GraphFactory}}
+\doxysubsubsection{\texorpdfstring{calculPrix()}{calculPrix()}}
+{\footnotesize\ttfamily \label{class_graph_factory_aafa6579af1bfdcd11781cefbff231b7a} 
+static double Graph\+Factory.\+calcul\+Prix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_passager}{Passager}}}]{passager}{, }\item[{\mbox{\hyperlink{class_station}{Station}}}]{debut}{, }\item[{\mbox{\hyperlink{class_station}{Station}}}]{arrive}{, }\item[{List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$}]{lignes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calcule le prix du trajet entre deux stations en fonction de la ligne utilisée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em debut} & La station de départ (ne doit pas être null). \\
+\hline
+{\em arrive} & La station d\textquotesingle{}arrivée (ne doit pas être null). \\
+\hline
+{\em lignes} & La liste des lignes disponibles (ne doit pas être null ou vide). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le prix du trajet en euros. Retourne 0 si aucune ligne ne relie les deux stations. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & Si l\textquotesingle{}une des stations ou la liste des lignes est null ou vide. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_graph_factory_ada3b31c92490e3014670138de37c7b64}\index{GraphFactory@{GraphFactory}!calculTemps@{calculTemps}}
+\index{calculTemps@{calculTemps}!GraphFactory@{GraphFactory}}
+\doxysubsubsection{\texorpdfstring{calculTemps()}{calculTemps()}}
+{\footnotesize\ttfamily \label{class_graph_factory_ada3b31c92490e3014670138de37c7b64} 
+static double Graph\+Factory.\+calcul\+Temps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_station}{Station}}}]{debut}{, }\item[{\mbox{\hyperlink{class_station}{Station}}}]{arrive}{, }\item[{List$<$ \mbox{\hyperlink{class_ligne}{Ligne}} $>$}]{lignes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calcule le temps de trajet entre deux stations sur une même ligne en fonction de la vitesse de la ligne. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em debut} & \doxylink{class_station}{Station} de départ \\
+\hline
+{\em arrive} & \doxylink{class_station}{Station} d\textquotesingle{}arrivée \\
+\hline
+{\em lignes} & Liste de toutes les lignes de transport \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Temps en secondes 
+\end{DoxyReturn}
+\Hypertarget{class_graph_factory_aefcf3f1df0fd4c4a2d488367232a2805}\index{GraphFactory@{GraphFactory}!convertirEnRadians@{convertirEnRadians}}
+\index{convertirEnRadians@{convertirEnRadians}!GraphFactory@{GraphFactory}}
+\doxysubsubsection{\texorpdfstring{convertirEnRadians()}{convertirEnRadians()}}
+{\footnotesize\ttfamily \label{class_graph_factory_aefcf3f1df0fd4c4a2d488367232a2805} 
+static double Graph\+Factory.\+convertir\+En\+Radians (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{valeurs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Convertit un angle exprimé en degrés, minutes, secondes en radians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valeurs} & Tableau contenant \{degrés, minutes, secondes\} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valeur en radians 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Graph\+Factory.\+java\end{DoxyCompactItemize}

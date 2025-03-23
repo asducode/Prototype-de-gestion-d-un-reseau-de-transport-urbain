@@ -1,0 +1,76 @@
+\doxysection{Ligne Class Reference}
+\hypertarget{class_ligne}{}\label{class_ligne}\index{Ligne@{Ligne}}
+
+
+Classe représentant une ligne de transport en commun.  
+
+
+
+
+Collaboration diagram for Ligne\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enum_ligne_1_1_type}{Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ligne_a9c07ee677d291d8e45e8cfe678e211cf}\label{class_ligne_a9c07ee677d291d8e45e8cfe678e211cf} 
+\mbox{\hyperlink{enum_ligne_1_1_type}{Type}} {\bfseries get\+Type} ()
+\begin{DoxyCompactList}\small\item\em Geter du type de la ligne. \end{DoxyCompactList}\item 
+\Hypertarget{class_ligne_a0d32b737e25c9331c8e84841cdedef03}\label{class_ligne_a0d32b737e25c9331c8e84841cdedef03} 
+void {\bfseries set\+Type} (\mbox{\hyperlink{enum_ligne_1_1_type}{Type}} type)
+\begin{DoxyCompactList}\small\item\em Seter du type de la ligne. \end{DoxyCompactList}\item 
+\Hypertarget{class_ligne_ae2ba2b8f597bf9b306b143ace4af3203}\label{class_ligne_ae2ba2b8f597bf9b306b143ace4af3203} 
+int {\bfseries get\+Vitesse} ()
+\begin{DoxyCompactList}\small\item\em Geter de la vitesse de la ligne. \end{DoxyCompactList}\item 
+\Hypertarget{class_ligne_a827fc8a99b38fcdc042558342280c2cc}\label{class_ligne_a827fc8a99b38fcdc042558342280c2cc} 
+void {\bfseries set\+Vitesse} (int vitesse)
+\begin{DoxyCompactList}\small\item\em Seter de la vitesse de la ligne. \end{DoxyCompactList}\item 
+\Hypertarget{class_ligne_aee274498bd1cff80682aaeec2a026a6d}\label{class_ligne_aee274498bd1cff80682aaeec2a026a6d} 
+String {\bfseries get\+Nom} ()
+\begin{DoxyCompactList}\small\item\em Geter du nom de la ligne. \end{DoxyCompactList}\item 
+\Hypertarget{class_ligne_a95cd1a5eac528e5f9291481805938906}\label{class_ligne_a95cd1a5eac528e5f9291481805938906} 
+void {\bfseries set\+Nom} (String nom)
+\begin{DoxyCompactList}\small\item\em Seter du nom de la ligne. \end{DoxyCompactList}\item 
+\Hypertarget{class_ligne_aa798e51dd513c73c04a8f1ca8d03a1c6}\label{class_ligne_aa798e51dd513c73c04a8f1ca8d03a1c6} 
+String\mbox{[}$\,$\mbox{]} {\bfseries get\+Stations} ()
+\begin{DoxyCompactList}\small\item\em Geter de la liste des stations de la ligne. \end{DoxyCompactList}\item 
+\Hypertarget{class_ligne_ac1da0cc9294e7ea3ccae67e34b35ef87}\label{class_ligne_ac1da0cc9294e7ea3ccae67e34b35ef87} 
+void {\bfseries set\+Stations} (String\mbox{[}$\,$\mbox{]} stations)
+\begin{DoxyCompactList}\small\item\em Seter de la liste des stations de la ligne. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ligne_a617299b67fa3f5fa9e8342a0f885b29a}{Ligne}} (String nom)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{class_ligne}{Ligne}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une ligne de transport en commun. 
+
+\begin{DoxyAuthor}{Author}
+\+: Landry ABLOH et Darius SEHOUBO 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ligne_a617299b67fa3f5fa9e8342a0f885b29a}\index{Ligne@{Ligne}!Ligne@{Ligne}}
+\index{Ligne@{Ligne}!Ligne@{Ligne}}
+\doxysubsubsection{\texorpdfstring{Ligne()}{Ligne()}}
+{\footnotesize\ttfamily \label{class_ligne_a617299b67fa3f5fa9e8342a0f885b29a} 
+Ligne.\+Ligne (\begin{DoxyParamCaption}\item[{String}]{nom}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de la classe \doxylink{class_ligne}{Ligne}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & \+: nom de la ligne \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Ligne.\+java\end{DoxyCompactItemize}

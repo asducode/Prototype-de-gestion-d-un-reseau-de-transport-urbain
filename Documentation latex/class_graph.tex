@@ -1,0 +1,471 @@
+\doxysection{Graph\texorpdfstring{$<$}{<} Node \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_graph}{}\label{class_graph}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+
+
+Générique classe qui utilise les Hash\+Map pour stocker un graph en memoire.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph_ac7fc6f61c0251e333a69a7de90452742}{Graph}} (boolean is\+Directed)
+\begin{DoxyCompactList}\small\item\em Créer une instance de \doxylink{class_graph}{Graph}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_graph_a2c043a68867d50939bc5bad9b6c9d5fe}{Graph}} (boolean is\+Directed, boolean is\+Weighted)
+\begin{DoxyCompactList}\small\item\em Créer une instance de \doxylink{class_graph}{Graph}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a194851e71df845326df3982677b2a70f}{add\+Edge}} (Node src, Node dest, Double poids)
+\begin{DoxyCompactList}\small\item\em Ajouter une arête pour un graph non orienté (donc dans les deux sens src -\/\texorpdfstring{$>$}{>} dest et dest-\/\texorpdfstring{$>$}{>} src, ou un arc entre src-\/\texorpdfstring{$>$}{>} dest si le graph est orienté. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a057480017d416e6ee754554d0d474900}{add\+Node}} (Node node)
+\begin{DoxyCompactList}\small\item\em Ajouter un sommet dans le graphe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_aef272486755afcdc5c49cfa48c2c6ddd}{add\+Edge}} (Node src, Node dest)
+\begin{DoxyCompactList}\small\item\em Ajouter une arête pour un graph non orienté (donc dans les deux sens src -\/\texorpdfstring{$>$}{>} dest et dest-\/\texorpdfstring{$>$}{>} src, ou un arc entre src-\/\texorpdfstring{$>$}{>} dest si le graph est orienté. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_graph_a5cde813eeb8f959916bbfc71cbadf012}{representation}} ()
+\begin{DoxyCompactList}\small\item\em Produire une chaîne de caractère qui liste ligen par ligne pour chaque sommet les sommets connecté directement par les arcs ou arêtes sortants. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_aba871cf829fef359875e02762288c6eb}{get\+Number\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de sommets dans le graphe. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_graph_ad2f8e061dfaeb2e5b08db3e5b97b9b89}{is\+Directed}} ()
+\begin{DoxyCompactList}\small\item\em Retourne si le graphe est orienté ou pas. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_graph_aed67ca27e6173c84ec0d3c2fa7fd86d2}{is\+Weighted}} ()
+\begin{DoxyCompactList}\small\item\em Retourne si le graphe doit utiliser les poids. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_a4691f44483999fbfe6bced4862e6d637}{number\+Incoming\+Edges}} (Node node)
+\begin{DoxyCompactList}\small\item\em Calcule et retourne le nombre d\textquotesingle{}arcs entrant pour un sommet. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_ac8faf6a752ceae690de460e3dd093c7b}{number\+Outgoing\+Edges}} (Node node)
+\begin{DoxyCompactList}\small\item\em Calcule et retourne le nombre d\textquotesingle{}arcs sortant pour un sommet. \end{DoxyCompactList}\item 
+Array\+List$<$ Node $>$ \mbox{\hyperlink{class_graph_a1bf92c356f58f0ad0a36ac9816d00701}{get\+Source\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Retourne une vecteur qui contient tout les sommets sources. \end{DoxyCompactList}\item 
+Array\+List$<$ Node $>$ \mbox{\hyperlink{class_graph_aa033e1dc13ddbe18ae3e145345beb625}{get\+Sink\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Retourne une vecteur qui contient tout les sommets puits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a8d909103e3209d6d8159416909704c3d}{depth\+First\+Traversal}} (Node node, Array\+List$<$ Node $>$ visited)
+\begin{DoxyCompactList}\small\item\em Méthode qui performe un parcours par profondeur sur le graph. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_graph_a19d5f886a24c9cda5185fe136ce6f83c}{is\+Node\+Reachable}} (Node departure\+Node, Node arrival\+Node)
+\begin{DoxyCompactList}\small\item\em Retourne si le sommet \textquotesingle{}arrival\+Node\textquotesingle{} est atteignable à partir du sommet \textquotesingle{}departure\+Node\textquotesingle{}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_graph_a1c540b7b339fd48cdb84dc64efedba5b}{has\+Cycle}} ()
+\begin{DoxyCompactList}\small\item\em Retourne si le graphe contient au moins un circuit. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_graph_ad0e6decc784f3985d4ae0b1ed54a214c}{is\+Connected}} ()
+\begin{DoxyCompactList}\small\item\em Retourne si un graph non-\/orienté est connexe. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_graph_af92ada02b250f7da60eaa3d752a1a7a7}{is\+Strongly\+Connected}} ()
+\begin{DoxyCompactList}\small\item\em Retourne si un graph orienté est fortement connexe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_ae2a02c2bf49741e3f9bbe16b338bf9b3}{number\+Connected\+Composants}} ()
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de composants connexes dans un graphe non-\/orienté \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_graph_aac256e8628578a18f154eb0bf016dc41}{is\+Resilient}} ()
+\begin{DoxyCompactList}\small\item\em Retourne si le grpahe est resistant de la suppression d\textquotesingle{}un sommet. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_graph_a8bffee7d910185904bd42cfbbec6cc5a}{is\+Resistant\+To\+Edge\+Removal}} ()
+\begin{DoxyCompactList}\small\item\em Retourne si le graphe est connexe-\/résistant. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Node, Double $>$ \mbox{\hyperlink{class_graph_aa01d2d22c74a2acece3c4d15eb46312a}{ford\+Values}} (Node start\+Node)
+\begin{DoxyCompactList}\small\item\em Calcule les valeurs Ford, pour ce graph, en les stockant dans un Hash\+Map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$ \mbox{\hyperlink{class_graph_ac2aace14cc7c4fd29a1f1bfbacd86fb0}{duplicate}} ()
+\begin{DoxyCompactList}\small\item\em Créer un duplicate de ce graph. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$ \mbox{\hyperlink{class_graph_ad07f81c6ae85932e2714f3ce1b277691}{floyd\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Calcule et retourne les floyd values pour ce graph. \end{DoxyCompactList}\item 
+Double \mbox{\hyperlink{class_graph_ad1bc5a210cbaed8aa8aa399976b4fff3}{diameter}} ()
+\begin{DoxyCompactList}\small\item\em Calcule et retourne le diamètre de ce graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Générique classe qui utilise les Hash\+Map pour stocker un graph en memoire. 
+
+Les instances de cette classe ont le même fonctionnalité que les graphes vus en TP de Structures de Données, mais parce que la classe a été définie comme une classe générique, il est possible de stocker d\textquotesingle{}autre chose que des entiers dans le graphe. 
+\begin{DoxyParams}{Parameters}
+{\em $<$\+Node$>$} & Le type de donnée d\textquotesingle{}être stocké dans le graphe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Richard WOODWARD 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_graph_ac7fc6f61c0251e333a69a7de90452742}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_graph_ac7fc6f61c0251e333a69a7de90452742} 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.\mbox{\hyperlink{class_graph}{Graph}} (\begin{DoxyParamCaption}\item[{boolean}]{is\+Directed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Créer une instance de \doxylink{class_graph}{Graph}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Directed} & true si graphe orienté, sinon false \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_graph_a2c043a68867d50939bc5bad9b6c9d5fe}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_graph_a2c043a68867d50939bc5bad9b6c9d5fe} 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.\mbox{\hyperlink{class_graph}{Graph}} (\begin{DoxyParamCaption}\item[{boolean}]{is\+Directed}{, }\item[{boolean}]{is\+Weighted}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Créer une instance de \doxylink{class_graph}{Graph}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Directed} & true si graphe orienté, sinon false \\
+\hline
+{\em is\+Weighted} & trus si graphe utilise le poids, sinon false \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_graph_aef272486755afcdc5c49cfa48c2c6ddd}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_graph_aef272486755afcdc5c49cfa48c2c6ddd} 
+void \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.add\+Edge (\begin{DoxyParamCaption}\item[{Node}]{src}{, }\item[{Node}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ajouter une arête pour un graph non orienté (donc dans les deux sens src -\/\texorpdfstring{$>$}{>} dest et dest-\/\texorpdfstring{$>$}{>} src, ou un arc entre src-\/\texorpdfstring{$>$}{>} dest si le graph est orienté. 
+
+Si le sommet source, ou le sommet destination, ne sont pas encore stocké dans le graph, cette méthode les ajoute dans le graph. Cette méthode utilise le poids par défaut pour le poids. 
+\begin{DoxyParams}{Parameters}
+{\em src} & le sommet source \\
+\hline
+{\em dest} & le sommet destination \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_graph_a194851e71df845326df3982677b2a70f}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_graph_a194851e71df845326df3982677b2a70f} 
+void \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.add\+Edge (\begin{DoxyParamCaption}\item[{Node}]{src}{, }\item[{Node}]{dest}{, }\item[{Double}]{poids}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ajouter une arête pour un graph non orienté (donc dans les deux sens src -\/\texorpdfstring{$>$}{>} dest et dest-\/\texorpdfstring{$>$}{>} src, ou un arc entre src-\/\texorpdfstring{$>$}{>} dest si le graph est orienté. 
+
+Si le sommet source, ou le sommet destination, ne sont pas encore stocké dans le graph, cette méthode les ajoute dans le graph. 
+\begin{DoxyParams}{Parameters}
+{\em src} & le sommet source \\
+\hline
+{\em dest} & le sommet destination \\
+\hline
+{\em poids} & le poids de la connection \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_graph_a057480017d416e6ee754554d0d474900}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!addNode@{addNode}}
+\index{addNode@{addNode}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{addNode()}{addNode()}}
+{\footnotesize\ttfamily \label{class_graph_a057480017d416e6ee754554d0d474900} 
+void \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.add\+Node (\begin{DoxyParamCaption}\item[{Node}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ajouter un sommet dans le graphe. 
+
+Vérifier en premier si le sommet existe déjà. 
+\begin{DoxyParams}{Parameters}
+{\em node} & le sommet d\textquotesingle{}ajouter dans le graphe \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_graph_a8d909103e3209d6d8159416909704c3d}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!depthFirstTraversal@{depthFirstTraversal}}
+\index{depthFirstTraversal@{depthFirstTraversal}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{depthFirstTraversal()}{depthFirstTraversal()}}
+{\footnotesize\ttfamily \label{class_graph_a8d909103e3209d6d8159416909704c3d} 
+void \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.depth\+First\+Traversal (\begin{DoxyParamCaption}\item[{Node}]{node}{, }\item[{Array\+List$<$ Node $>$}]{visited}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Méthode qui performe un parcours par profondeur sur le graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & le sommet courrant \\
+\hline
+{\em visited} & un Array\+List qui contient les sommets déjà visités \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_graph_ad1bc5a210cbaed8aa8aa399976b4fff3}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!diameter@{diameter}}
+\index{diameter@{diameter}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{diameter()}{diameter()}}
+{\footnotesize\ttfamily \label{class_graph_ad1bc5a210cbaed8aa8aa399976b4fff3} 
+Double \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.diameter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcule et retourne le diamètre de ce graph. 
+
+\begin{DoxyReturn}{Returns}
+une valeur réelle qui contient le diamètre de ce graph 
+\end{DoxyReturn}
+\Hypertarget{class_graph_ac2aace14cc7c4fd29a1f1bfbacd86fb0}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{duplicate()}{duplicate()}}
+{\footnotesize\ttfamily \label{class_graph_ac2aace14cc7c4fd29a1f1bfbacd86fb0} 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.duplicate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Créer un duplicate de ce graph. 
+
+\begin{DoxyReturn}{Returns}
+une nouvelle instance de \doxylink{class_graph}{Graph} qui est identique de cette instance 
+\end{DoxyReturn}
+\Hypertarget{class_graph_ad07f81c6ae85932e2714f3ce1b277691}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!floydValues@{floydValues}}
+\index{floydValues@{floydValues}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{floydValues()}{floydValues()}}
+{\footnotesize\ttfamily \label{class_graph_ad07f81c6ae85932e2714f3ce1b277691} 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.floyd\+Values (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcule et retourne les floyd values pour ce graph. 
+
+\begin{DoxyReturn}{Returns}
+un \doxylink{class_graph}{Graph} qui contient les floyd values 
+\end{DoxyReturn}
+\Hypertarget{class_graph_aa01d2d22c74a2acece3c4d15eb46312a}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!fordValues@{fordValues}}
+\index{fordValues@{fordValues}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{fordValues()}{fordValues()}}
+{\footnotesize\ttfamily \label{class_graph_aa01d2d22c74a2acece3c4d15eb46312a} 
+Hash\+Map$<$ Node, Double $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.ford\+Values (\begin{DoxyParamCaption}\item[{Node}]{start\+Node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcule les valeurs Ford, pour ce graph, en les stockant dans un Hash\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Node} & le donde de départure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Hash\+Map qui contient les valeurs Ford 
+\end{DoxyReturn}
+\Hypertarget{class_graph_aba871cf829fef359875e02762288c6eb}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!getNumberNodes@{getNumberNodes}}
+\index{getNumberNodes@{getNumberNodes}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{getNumberNodes()}{getNumberNodes()}}
+{\footnotesize\ttfamily \label{class_graph_aba871cf829fef359875e02762288c6eb} 
+int \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.get\+Number\+Nodes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne le nombre de sommets dans le graphe. 
+
+\begin{DoxyReturn}{Returns}
+int représentant le nombre de sommets dans le graphe 
+\end{DoxyReturn}
+\Hypertarget{class_graph_aa033e1dc13ddbe18ae3e145345beb625}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!getSinkNodes@{getSinkNodes}}
+\index{getSinkNodes@{getSinkNodes}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{getSinkNodes()}{getSinkNodes()}}
+{\footnotesize\ttfamily \label{class_graph_aa033e1dc13ddbe18ae3e145345beb625} 
+Array\+List$<$ Node $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.get\+Sink\+Nodes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne une vecteur qui contient tout les sommets puits. 
+
+\begin{DoxyReturn}{Returns}
+un Array\+List qui contient les sommets dites puits 
+\end{DoxyReturn}
+\Hypertarget{class_graph_a1bf92c356f58f0ad0a36ac9816d00701}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!getSourceNodes@{getSourceNodes}}
+\index{getSourceNodes@{getSourceNodes}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{getSourceNodes()}{getSourceNodes()}}
+{\footnotesize\ttfamily \label{class_graph_a1bf92c356f58f0ad0a36ac9816d00701} 
+Array\+List$<$ Node $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.get\+Source\+Nodes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne une vecteur qui contient tout les sommets sources. 
+
+\begin{DoxyReturn}{Returns}
+un Array\+List qui contient les sommets dites source 
+\end{DoxyReturn}
+\Hypertarget{class_graph_a1c540b7b339fd48cdb84dc64efedba5b}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!hasCycle@{hasCycle}}
+\index{hasCycle@{hasCycle}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{hasCycle()}{hasCycle()}}
+{\footnotesize\ttfamily \label{class_graph_a1c540b7b339fd48cdb84dc64efedba5b} 
+boolean \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.has\+Cycle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne si le graphe contient au moins un circuit. 
+
+\begin{DoxyReturn}{Returns}
+true si au moin un circuit est trouvé, sinon false 
+\end{DoxyReturn}
+\Hypertarget{class_graph_ad0e6decc784f3985d4ae0b1ed54a214c}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily \label{class_graph_ad0e6decc784f3985d4ae0b1ed54a214c} 
+boolean \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.is\+Connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne si un graph non-\/orienté est connexe. 
+
+\begin{DoxyReturn}{Returns}
+true is le graph est connexe, sinon false 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Operation\+Exception} & si le graphe est orienté \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_graph_ad2f8e061dfaeb2e5b08db3e5b97b9b89}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!isDirected@{isDirected}}
+\index{isDirected@{isDirected}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{isDirected()}{isDirected()}}
+{\footnotesize\ttfamily \label{class_graph_ad2f8e061dfaeb2e5b08db3e5b97b9b89} 
+boolean \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.is\+Directed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne si le graphe est orienté ou pas. 
+
+\begin{DoxyReturn}{Returns}
+true si orienté, sinon false 
+\end{DoxyReturn}
+\Hypertarget{class_graph_a19d5f886a24c9cda5185fe136ce6f83c}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!isNodeReachable@{isNodeReachable}}
+\index{isNodeReachable@{isNodeReachable}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{isNodeReachable()}{isNodeReachable()}}
+{\footnotesize\ttfamily \label{class_graph_a19d5f886a24c9cda5185fe136ce6f83c} 
+boolean \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.is\+Node\+Reachable (\begin{DoxyParamCaption}\item[{Node}]{departure\+Node}{, }\item[{Node}]{arrival\+Node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne si le sommet \textquotesingle{}arrival\+Node\textquotesingle{} est atteignable à partir du sommet \textquotesingle{}departure\+Node\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em departure\+Node} & le sommet de départure \\
+\hline
+{\em arrival\+Node} & le sommet qu\textquotesingle{}on veut atteindre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si c\textquotesingle{}est possible de l\textquotesingle{}atteindre, sinon false 
+\end{DoxyReturn}
+\Hypertarget{class_graph_aac256e8628578a18f154eb0bf016dc41}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!isResilient@{isResilient}}
+\index{isResilient@{isResilient}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{isResilient()}{isResilient()}}
+{\footnotesize\ttfamily \label{class_graph_aac256e8628578a18f154eb0bf016dc41} 
+boolean \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.is\+Resilient (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne si le grpahe est resistant de la suppression d\textquotesingle{}un sommet. 
+
+\begin{DoxyReturn}{Returns}
+true si le graphe est resistant, sinon faux 
+\end{DoxyReturn}
+\Hypertarget{class_graph_a8bffee7d910185904bd42cfbbec6cc5a}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!isResistantToEdgeRemoval@{isResistantToEdgeRemoval}}
+\index{isResistantToEdgeRemoval@{isResistantToEdgeRemoval}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{isResistantToEdgeRemoval()}{isResistantToEdgeRemoval()}}
+{\footnotesize\ttfamily \label{class_graph_a8bffee7d910185904bd42cfbbec6cc5a} 
+boolean \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.is\+Resistant\+To\+Edge\+Removal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne si le graphe est connexe-\/résistant. 
+
+\begin{DoxyReturn}{Returns}
+true si le graphe est connexe-\/résistant, sinon false 
+\end{DoxyReturn}
+\Hypertarget{class_graph_af92ada02b250f7da60eaa3d752a1a7a7}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!isStronglyConnected@{isStronglyConnected}}
+\index{isStronglyConnected@{isStronglyConnected}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{isStronglyConnected()}{isStronglyConnected()}}
+{\footnotesize\ttfamily \label{class_graph_af92ada02b250f7da60eaa3d752a1a7a7} 
+boolean \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.is\+Strongly\+Connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne si un graph orienté est fortement connexe. 
+
+\begin{DoxyReturn}{Returns}
+true is le graph est fortement connexe, sinon false 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Operation\+Exception} & si le graphe est non-\/orienté \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_graph_aed67ca27e6173c84ec0d3c2fa7fd86d2}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!isWeighted@{isWeighted}}
+\index{isWeighted@{isWeighted}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{isWeighted()}{isWeighted()}}
+{\footnotesize\ttfamily \label{class_graph_aed67ca27e6173c84ec0d3c2fa7fd86d2} 
+boolean \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.is\+Weighted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne si le graphe doit utiliser les poids. 
+
+\begin{DoxyReturn}{Returns}
+true si oui, sinon false 
+\end{DoxyReturn}
+\Hypertarget{class_graph_ae2a02c2bf49741e3f9bbe16b338bf9b3}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!numberConnectedComposants@{numberConnectedComposants}}
+\index{numberConnectedComposants@{numberConnectedComposants}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{numberConnectedComposants()}{numberConnectedComposants()}}
+{\footnotesize\ttfamily \label{class_graph_ae2a02c2bf49741e3f9bbe16b338bf9b3} 
+int \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.number\+Connected\+Composants (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retourne le nombre de composants connexes dans un graphe non-\/orienté 
+
+\begin{DoxyReturn}{Returns}
+le nombre de composants connexes 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Operation\+Exception} & si le graphe est orienté \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_graph_a4691f44483999fbfe6bced4862e6d637}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!numberIncomingEdges@{numberIncomingEdges}}
+\index{numberIncomingEdges@{numberIncomingEdges}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{numberIncomingEdges()}{numberIncomingEdges()}}
+{\footnotesize\ttfamily \label{class_graph_a4691f44483999fbfe6bced4862e6d637} 
+int \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.number\+Incoming\+Edges (\begin{DoxyParamCaption}\item[{Node}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcule et retourne le nombre d\textquotesingle{}arcs entrant pour un sommet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & le sommet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int représentant le nombre d\textquotesingle{}arcs entrant 
+\end{DoxyReturn}
+\Hypertarget{class_graph_ac8faf6a752ceae690de460e3dd093c7b}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!numberOutgoingEdges@{numberOutgoingEdges}}
+\index{numberOutgoingEdges@{numberOutgoingEdges}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{numberOutgoingEdges()}{numberOutgoingEdges()}}
+{\footnotesize\ttfamily \label{class_graph_ac8faf6a752ceae690de460e3dd093c7b} 
+int \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.number\+Outgoing\+Edges (\begin{DoxyParamCaption}\item[{Node}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcule et retourne le nombre d\textquotesingle{}arcs sortant pour un sommet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & le sommet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int représentant le nombre d\textquotesingle{}arcs sortant 
+\end{DoxyReturn}
+\Hypertarget{class_graph_a5cde813eeb8f959916bbfc71cbadf012}\index{Graph$<$ Node $>$@{Graph$<$ Node $>$}!representation@{representation}}
+\index{representation@{representation}!Graph$<$ Node $>$@{Graph$<$ Node $>$}}
+\doxysubsubsection{\texorpdfstring{representation()}{representation()}}
+{\footnotesize\ttfamily \label{class_graph_a5cde813eeb8f959916bbfc71cbadf012} 
+String \mbox{\hyperlink{class_graph}{Graph}}$<$ Node $>$.representation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Produire une chaîne de caractère qui liste ligen par ligne pour chaque sommet les sommets connecté directement par les arcs ou arêtes sortants. 
+
+\begin{DoxyReturn}{Returns}
+String représentant le graphe 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Graph.\+java\end{DoxyCompactItemize}
